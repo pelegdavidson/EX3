@@ -119,7 +119,9 @@ public class MainActivity extends AppCompatActivity {
                 hiluk.setEnabled(false);
                 caful.setEnabled(false);
             }
-            else {
+            else if(edt2.getText().equals("0")) {
+                hiluk.setEnabled(false);
+            }else{
                 minus.setEnabled(true);
                 plus.setEnabled(true);
                 hiluk.setEnabled(true);
